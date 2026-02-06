@@ -25,7 +25,7 @@ export default function Footer() {
         </p>
 
         <div>
-        <button className="relative lg:mt-8 mt-4 bg-primary 2xl:text-2xl xl:text-xl lg:text-lg md:text-base px-8 py-4 md:px-5 md:py-2 xl:py-4 xl:px-7 rounded-md text-white font-semibold">
+        <button className="relative lg:mt-8 mt-4 bg-primary hover:opacity-85 2xl:text-2xl xl:text-xl lg:text-lg md:text-base px-8 py-4 md:px-5 md:py-2 xl:py-4 xl:px-7 rounded-md text-white font-semibold">
           BEGIN MY STORY
         </button>
         </div>
@@ -82,8 +82,8 @@ export default function Footer() {
             <div className="text-center order-1 w-full sm:w-[50%] lg:w-full md:text-left">
               <p className="font-semibold 2xl:text-2xl mb-2 text-start">Contact Details</p>
               <div className='flex xl:sgap-24 gap-15'>
-              <p className='flex gap-1 text-xs xl:text-base'><MapPinIcon className="w-5 h-5 sm:w-4 sm:h-4" /> Dummy Address</p>
-              <p className='flex gap-1 text-xs xl:text-base'><PhoneIcon className="w-5 h-5 sm:w-4 sm:h-4" /> +0123 456 789</p>
+              <p className='items-center flex gap-1 text-xs xl:text-base'><MapPinIcon className="w-5 h-5 sm:w-4 sm:h-4" /> Dummy Address</p>
+              <p className='items-center flex gap-1 text-xs xl:text-base'><PhoneIcon className="w-5 h-5 sm:w-4 sm:h-4" /> +0123 456 789</p>
               </div>
             </div>
 

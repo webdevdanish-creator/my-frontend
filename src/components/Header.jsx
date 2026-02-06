@@ -56,7 +56,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl text-primary"
         >
           ☰
         </button>
@@ -65,12 +65,12 @@ export default function Header() {
       </div>
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-white border-t text-primary">
           {["Home", "How It Works", "Plans", "Enterprise"].map((item) => (
             <a
               key={item}
-              href="#"
-              className="block px-6 py-3 hover:bg-accent"
+              href="/"
+              className="block px-6 py-3 hover:bg-accent "
             >
               {item}
             </a>

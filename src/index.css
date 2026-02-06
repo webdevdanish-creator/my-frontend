@@ -28,10 +28,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-family-2:"Raleway", sans-serif;
-  
+}
+
+body{
+    background-color: white;
 }
 .font2{
   font-family: var(--font-family-2);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.lang:hover svg {
+    fill: white;
 }
 
 .hero-slider img {
@@ -140,6 +151,49 @@
     z-index: 2;
 }
 
+section#our-service {
+    border-radius: 0px 0px 100px 100px;
+}
+
+.active:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: auto;
+    background-image: url(src/assets/images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    top: 5%;
+    left: 3%;
+}
+.active .serv-card {
+    text-align: left;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.active .serv-card h3 {
+    text-align: left;
+}
+
+.active .serv-card p{
+  display: block;
+  opacity:1;
+}
+.serv-card p{
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s 0.15s linear;
+}
+.serv-card {
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+}
+.card-gallery {
+    align-content: end;
+}
+
 @keyframes left-t {
 
   0%{
@@ -200,6 +254,69 @@ span.center-text {
     animation: center-t 2000ms infinite ease-in-out;
 }
 }
+@media (max-width:767px){
+  .serv-card p {
+    display: block;
+    opacity: 1;
+    text-align: center;
+    line-height: 1.2em;
+}
+.serv-card {
+    height: 65%;
+}
+.serv-card button {
+    font-size: 14px;
+    padding: 8px 10px;
+    line-height: 1em;
+}
+}
+
+@media (max-width:400px){
+  .family-tree img {
+    border-radius: 20px !important;
+}
+.card-gallery {
+    width: 100% !important;
+}
+    .serv-card {
+        height: 55%;
+        gap: 0px !important;
+        justify-content: center;
+    }
+}
+
+@media (min-width:401px) and (max-width:639px){
+  .section1 .cards {
+    height: 75vw;
+}
+.serv-card p {
+        font-size: 14px;
+    }
+.section1 .cards .card-inner {
+    padding: 20px;
+}
+.section1 .cards .card-inner img {
+    width: 100px !important;
+}
+.section1 .cards .card-inner h3 {
+    font-size: 20px;
+}
+.section1 .cards .card-inner p {
+    font-size: 15px;
+}
+.family-tree img {
+    border-radius: 25px !important;
+}
+#steps .swiper img {
+    width: 80%;
+    object-fit: contain;
+    margin: auto;
+}
+.section1 .btn-wrap {
+    display: flex;
+    flex-direction: row;
+}
+}
 
 @media (min-width:640px){
   .tab-cont {
@@ -213,20 +330,34 @@ span.center-text {
 
 @media (max-width:639px)
 {
-  .custom-swiper .swiper-slide-active {
+  /* .custom-swiper .swiper-slide-active {
     margin-right: 0px !important;
-}
+} */
 .hero-slider
  {
     transform: none;
 }
-.family-tree {
-    background-size: 16%, 22%, cover !important;
-    border-radius: 30px !important;
-    box-shadow: rgba(0, 0, 0, 0.22) 0px 10px 32px;
-}
+
 .cta-sec {
     clip-path: ellipse(110% 100% at 50% 0%);
+}
+#testimonial button {
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+}
+button.testimonial-next {
+    right: 5px;
+}
+button.testimonial-prev {
+    left: 5px;
+}
+#testimonial img.avatar{
+  width:60%;
+  margin:auto;
+}
+section#our-service {
+    border-radius: 45px;
 }
 }
 
@@ -235,11 +366,16 @@ span.center-text {
  {
     transform: translate(11%, 0px);
 }
-.family-tree {
-    background-size: 15%, 20%, cover !important;
-    border-radius: 38px !important;
-    box-shadow: rgba(0, 0, 0, 0.22) 0px 20px 34px;
+.family-tree img {
+    border-radius: 40px !important;
 }
+.content {
+    height: 255px;
+}
+#testimonial .swiper {
+    width: calc(100% - 35px);
+}
+
 .cta-sec {
     clip-path: ellipse(85% 100% at 50% 0%);
 }
@@ -252,11 +388,40 @@ span.center-text {
 .cta-sec {
     clip-path: ellipse(70% 100% at 50% 0%);
 }
+.serv-card p {
+    line-height: 1.2em;
+}
+.serv-card {
+    padding: 10px;
+    padding-top: 0;
+}
+#testimonial .swiper
+ {
+    width: calc(100% - 50px);
+}
+#testimonial button {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+}
+.family-tree img {
+    border-radius: 50px !important;
+}
 }
 
 @media (min-width:1024px) and (max-width:1279px){
 .cta-sec {
     clip-path: ellipse(70% 100% at 50% 0%);
+}
+#testimonial .swiper {
+    width: calc(100% - 70px);
+}
+#testimonial button {
+    width: 35px;
+    height: 35px;
+}
+.family-tree img {
+    border-radius: 70px !important;
 }
 }
 @media (min-width:1280px) and (max-width:1536px){
@@ -265,6 +430,9 @@ span.center-text {
 }
 .cta-sec {
     clip-path: ellipse(70% 100% at 50% 0%);
+}
+.family-tree img {
+    border-radius: 90px !important;
 }
 }
 

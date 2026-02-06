@@ -388,7 +388,7 @@ export default function ServicesTabs() {
 
 
   return (
-    <section className="pt-20 lg:pt-32">
+    <section id="steps" className="pt-20 lg:pt-32">
       <div className="container mx-auto">
 
         {/* Heading */}

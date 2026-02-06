@@ -23,7 +23,7 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   return (
-    <section className="lg:py-32 sm:py-20 py-10 relative">
+    <section id="testimonial" className="lg:py-32 sm:py-20 py-10 relative">
       <div className="container mx-auto px-6">
 
         <Swiper
@@ -65,7 +65,7 @@ export default function TestimonialSlider() {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className=""
+                      className="avatar"
                     />
                   </div>
                 </div>
@@ -76,11 +76,11 @@ export default function TestimonialSlider() {
         </Swiper>
 
         {/* CUSTOM NAVIGATION */}
-        <button className="testimonial-prev absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-black transition">
+        <button className="testimonial-prev text-primary absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-black transition">
           ‹
         </button>
 
-        <button className="testimonial-next absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-black transition">
+        <button className="testimonial-next text-primary absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-black transition">
           ›
         </button>
 

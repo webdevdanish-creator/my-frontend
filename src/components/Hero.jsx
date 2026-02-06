@@ -138,7 +138,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center gap-4 text-base 2xl:text-2xl xl:text-xl sm:text-lg"
+          className="btn-wrap mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center gap-4 text-base 2xl:text-2xl xl:text-xl sm:text-lg"
         >
           <button className="bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:opacity-90">
             Start Your Story
