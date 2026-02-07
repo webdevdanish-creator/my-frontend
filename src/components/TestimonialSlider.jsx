@@ -1,23 +1,30 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
+
+import tst1 from "/src/assets/images/testimonial1.jpg"
+import tst2 from "/src/assets/images/testimonial2.jpg"
+import tst3 from "/src/assets/images/testimonial3.jpg"
 
 const testimonials = [
   {
     quote:
-      "Now my children can hear their grandmother’s voice anytime. It’s like she’s still here telling her stories.",
-    name: "Maria G.",
-    role: "Family Plan User",
-    image: "/src/assets/images/testimonial.png",
+      "“This tool helped us preserve legacy stories in a way text never could. The voice feature added deep emotional value to our storytelling projects",
+    name: "Nathan",
+    image: tst1,
   },
   {
     quote:
-      "This platform helped us preserve our family stories in a way that feels alive and meaningful.",
-    name: "John D.",
-    role: "Premium User",
-    image: "/src/assets/images/testimonial.png",
+      "“We used the platform for memorial and heritage content and the results wereincredibly powerful. It allowed us to recreate voices responsibly for storytelling",
+    name: "Joseph.",
+    image: tst2,
+  },
+  {
+    quote:
+      "“From writing to voice narration, this AI streamlined to our entire storytelling workflow. It enabled us to deliver meaningful, voice-led experiences that strengthened emotional connection and engagement”",
+    name: "Henry",
+    image: tst3,
   },
 ];
 
@@ -32,10 +39,10 @@ export default function TestimonialSlider() {
             nextEl: ".testimonial-next",
             prevEl: ".testimonial-prev",
           }}
-          autoplay={{
-            delay: 4500,        // ⏱ Auto-slide delay (ms)
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 4500,        // ⏱ Auto-slide delay (ms)
+          //   disableOnInteraction: false,
+          // }}
           speed={800}            // 🎯 Slide transition speed (ms)
           loop={true}
           className="relative"
@@ -48,7 +55,7 @@ export default function TestimonialSlider() {
                 <div>
                   <img src="src/assets/images/quote1.png" alt="" />
 
-                  <h3 className="2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl font-regular text-primary capitalize leading-[1.2em]">
+                  <h3 className="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl text-lg font-regular text-primary capitalize leading-[1.2em]">
                     <span className="font-black text-primary">What Our Storytellers Say</span> <br />
                     <span>{item.quote} <img src="src/assets/images/quote2.png" alt="" className="md:h-[24px]" /></span>
                   </h3>

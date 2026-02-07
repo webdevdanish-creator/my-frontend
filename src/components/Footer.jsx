@@ -1,11 +1,18 @@
 import { MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid'
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaPinterestP,
-  FaYoutube,
-} from 'react-icons/fa'
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
+// import {
+//   FaFacebookF,
+//   FaTwitter,
+//   FaInstagram,
+//   FaPinterestP,
+//   FaYoutube,
+// } from 'react-icons/fa'
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+</svg>
+
+
 
 export default function Footer() {
   return (
@@ -75,15 +82,16 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM ROW */}
-        <div className="border-t border-white/20">
-          <div className="container mx-auto lg:px-6 lg:py-8 px-3 py-4 flex flex-wrap lg:grid md:grid-cols-3 gap-y-8 gap-x-0 md:gap-0 md:gap-y-7 items-center text-sm">
+        <div className="border-t border-white/20 copyright">
+          <div className="container mx-auto lg:px-6 lg:py-8 px-3 py-4 flex flex-wrap lg:grid md:grid-cols-3 gap-y-8 gap-x-0 md:gap-0 md:gap-y-10 items-center text-sm">
 
             {/* Contact */}
-            <div className="text-center order-1 w-full sm:w-[50%] lg:w-full md:text-left">
-              <p className="font-semibold 2xl:text-2xl mb-2 text-start">Contact Details</p>
-              <div className='flex xl:sgap-24 gap-15'>
+            <div className="text-center order-1 w-full">
+              <p className="font-semibold 2xl:text-2xl mb-2 ">Contact Details</p>
+              <div className='cnt flex xl:sgap-24 gap-15 justify-center'>
               <p className='items-center flex gap-1 text-xs xl:text-base'><MapPinIcon className="w-5 h-5 sm:w-4 sm:h-4" /> Dummy Address</p>
-              <p className='items-center flex gap-1 text-xs xl:text-base'><PhoneIcon className="w-5 h-5 sm:w-4 sm:h-4" /> +0123 456 789</p>
+              <p className='items-center flex gap-1 text-xs xl:text-base'><EnvelopeIcon className="w-5 h-5 sm:w-4 sm:h-4" /> <a href="mailto:dummy@domain.com">dummy@domain.com</a></p>
+              <p className='items-center flex gap-1 text-xs xl:text-base'><PhoneIcon className="w-5 h-5 sm:w-4 sm:h-4" /> <a href="tel:+0123 456 789">+0123 456 789</a></p>
               </div>
             </div>
 
@@ -93,7 +101,7 @@ export default function Footer() {
             </div>
 
             {/* Social */}
-            <div className="text-center order-2 lg:order-3 w-full sm:w-[50%] lg:w-full md:text-right social-ic">
+            {/* <div className="text-center order-2 lg:order-3 w-full sm:w-[50%] lg:w-full md:text-right social-ic">
               <p className="font-semibold mb-2 2xl:text-2xl text-start sm:text-end">Our Social Media</p>
               <div className="flex justify-start sm:justify-end gap-4 xl:text-xl text-base">
                 <a href="#" aria-label="Facebook">
@@ -112,7 +120,7 @@ export default function Footer() {
                     <FaYoutube className="text-white hover:text-secondary transition" />
                   </a>
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>

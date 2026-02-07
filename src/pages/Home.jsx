@@ -14,9 +14,8 @@ export default function Home() {
     <>
     <Header />
       <Hero />
-      <ServicesTabs />
-
       <FamilyTree />
+      <ServicesTabs />
       <OurServices />
       <TestimonialSlider />
       <Footer />

@@ -191,8 +191,9 @@ export default function Carousel() {
     >
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={4}
-        spaceBetween={-60}
+        slidesPerView={5}
+        spaceBetween={0}
+        loop
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
@@ -208,13 +209,17 @@ export default function Carousel() {
             slidesPerView: 2,
             spaceBetween: 0,
           },
-          640: {
+          400: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+          768: {
             slidesPerView: 4,
-            spaceBetween: -20,
+            spaceBetween: 0,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: -60,
+            slidesPerView: 5,
+            spaceBetween: 0,
           },
         }}
       >

@@ -8,10 +8,10 @@ import ServImg3 from "/src/assets/images/service3.png"
 import ServImg4 from "/src/assets/images/service4.png"
 
 const services = [
-  { id: 1, title: "WRITE IT", image: ServImg1, desc:"Write your life stories easily using simple text. Turn your memories into meaningful written stories." },
-  { id: 2, title: "TRANSLATE IT", image: ServImg2, desc:"Your legacy story will be available to family and friends, Globally. Accessible, and shareable Globally." },
-  { id: 3, title: "VOICE IT", image: ServImg3, desc:"With our voice cloning your voice will sound correct, polished and professional." },
-  { id: 4, title: "SHARE IT", image: ServImg4, desc:"Your voice. Your story. Forever. Record and preserve memories with Easy Speak Stories." },
+  { id: 1, title: "WRITE IT", image: ServImg1, desc:"Turn ideas into stories within seconds. We craft engaging narratives tailored to purpose and audience." },
+  { id: 2, title: "TRANSLATE IT", image: ServImg2, desc:"Break language barriers effortlessly. Instantly translate stories while preserving tone, emotion and meaning" },
+  { id: 3, title: "VOICE IT", image: ServImg3, desc:"Bring stories to life with natural-sounding AI voices. Choose from multiple tones and styles for a human-like experience" },
+  { id: 4, title: "SHARE IT", image: ServImg4, desc:"Share your stories privately with your family members on the platform. Easily publish and keep your moments within your trusted circle, so everyone stays connected and engaged." },
 ];
 
 // export default function OurServices() {

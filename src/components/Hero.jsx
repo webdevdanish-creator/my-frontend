@@ -30,88 +30,6 @@ const bgClasses = [
   'border_clr4',
 ]
 
-// export default function Hero() {
-//   return (
-//     <section className="relative pt-20 pb-25 overflow-hidden section1">
-      
-
-//       <div className="container mx-auto px-6 text-center pb-15">
-
-//         {/* Heading */}
-//         <AnimatedHeading />
-
-//         {/* Subtitle */}
-//         <motion.p
-//           initial={{ opacity: 0, y: 40 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.8, delay: 0.1 }}
-//           className="mt-6 text-primary mx-auto"
-//         >
-//           The Digital Storytelling Platform
-//         </motion.p>
-
-//         {/* Buttons */}
-//         <motion.div
-//           initial={{ opacity: 0, y: 40 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 1, delay: 0.2 }}
-//           className="mt-12 flex text-2xl justify-center gap-4"
-//         >
-//           <button className="bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:opacity-90">
-//             Start Your Story
-//           </button>
-//           <button className="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-secondary hover:border-secondary hover:text-white transition">
-//             View Plans
-//           </button>
-//         </motion.div>
-
-//         {/* Social */}
-//         <motion.div
-//           initial={{ opacity: 0, y: 40 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 1, delay: 0.2 }}
-//           className="mt-12 flex justify-center gap-24"
-//         >
-//           {["src/assets/images/whatsapp.svg", "src/assets/images/microsoft.svg", "src/assets/images/snapchat.svg", "src/assets/images/twitch.svg", "src/assets/images/payoneer.svg", "src/assets/images/android.svg"].map((item) => (
-//             <a
-//               key={item}
-//               href="#"
-//               className="transition"
-//             >
-//               <img src={item} alt="" />
-//             </a>
-//           ))}
-//         </motion.div>
-
-        
-//         <Carousel />
-
-//       </div>
-
-      // <div className="container mx-auto px-6 hero-cards pt-15">
-      //         <h2 className="text-7xl font-bold text-center text-primary leading-tight">Overview</h2>
-      
-      //         <div className="grid md:grid-cols-4 gap-6 mt-24">
-      //           {cards.map((card, i) => (
-      //             <motion.div
-      //               key={i}
-      //               variants={fadeUp}
-      //               initial="hidden"
-      //               whileInView="visible"
-      //               className={` ${bgClasses[i % bgClasses.length]} p-[2px] rounded-xl shadow text-center cards`}
-      //             >
-      //               <div className="p-5 card-inner mx-auto" >
-      //               <img className="mx-auto" src={card.icon} alt="" />
-      //               <h3 className="text-primary font-bold text-3xl">{card.title}</h3>
-      //               <p className="text-primary text-lg mt-2">{card.desc}</p>
-      //               </div>
-      //             </motion.div>
-      //           ))}
-      //         </div>
-      //       </div>
-//     </section>
-//   );
-// }
 
 export default function Hero() {
   return (
@@ -150,7 +68,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Social Icons */}
-        <motion.div
+       {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -172,7 +90,7 @@ export default function Hero() {
               />
             </a>
           ))}
-        </motion.div>
+        </motion.div>*/}
 
         {/* Slider */}
         <div className="">
@@ -181,34 +99,6 @@ export default function Hero() {
       </div>
 
       {/* OVERVIEW SECTION */}
-      {/* <div className="container mx-auto px-4 sm:px-6 pt-20 sm:pt-28">
-        <h2 className="text-[clamp(2rem,6vw,3.5rem)] font-bold text-center text-primary">
-          Overview
-        </h2>
-
-        <div className="mt-12 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cards.map((card, i) => (
-            <motion.div
-              key={i}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className={`${bgClasses[i % bgClasses.length]} p-[2px] rounded-xl shadow`}
-            >
-              <div className="p-6 text-center card-inner">
-                <img className="mx-auto mb-4 h-12 sm:h-14" src={card.icon} alt="" />
-                <h3 className="text-primary font-bold text-xl sm:text-2xl">
-                  {card.title}
-                </h3>
-                <p className="text-primary text-base sm:text-lg mt-2">
-                  {card.desc}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div> */}
             <div className="container mx-auto md:px-6 px-1 hero-cards pt-15 sm:pt-30 ">
               <h2 className="2xl:text-7xl xl:text-6xl lg:text-5xl text-4xl font-bold text-center text-primary leading-tight">Overview</h2>
       
@@ -236,59 +126,6 @@ export default function Hero() {
 
 
 
-// export function AnimatedHeading() {
-//   const [index, setIndex] = useState(0)
-//   const intervalRef = useRef(null)
-
- 
-//   useEffect(() => {
-    
-//   const firstDelay = setTimeout(() => {
-//     const interval = setInterval(() => {
-//       setIndex((prev) => (prev + 1) % words.length)
-//     }, 2000)
-
-//     // store interval id for cleanup
-//     intervalRef.current = interval
-//   }, 1000)
-
-//   return () => {
-//     clearTimeout(firstDelay)
-//     clearInterval(intervalRef.current)
-//   }
-// }, [])
-
-//   return (
-//     <h1
-//       className="text-6xl font-bold  flex flex-wrap items-center justify-center gap-2"
-//     >
-//       {/* LEFT TEXT */}
-//         <span
-//         className="text-primary left-text"
-//       >
-//         Preserving Stories –
-//       </span>
-
-//       {/* ANIMATED WORD */}
-//       <span className="relative inline-block h-[1.2em] center-text">
-//         <AnimatePresence mode="wait">
-//             <span
-//             className=" text-secondary whitespace-nowrap "
-//           >
-//             {words[index]}
-//           </span>
-//         </AnimatePresence>
-//       </span>
-
-//       {/* RIGHT TEXT */}
-//         <span
-//         className="text-primary right-text"
-//       >
-//         – Memories Forever
-//       </span>
-//     </h1>
-//   )
-// }
 
 
 export function AnimatedHeading() {
