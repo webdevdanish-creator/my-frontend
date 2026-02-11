@@ -1,5 +1,6 @@
 import { fadeUp } from "../animations/fadeUp";
 import Carousel from "../components/StackedHoverSlider";
+import SliderBg from "/src/assets/images/slider-bg.png"
 
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState, useRef } from 'react'
@@ -36,7 +37,7 @@ export default function Hero() {
     <section className="relative overflow-hidden section1 pt-7.5 pb-20 sm:pb-28 lg:pb-28 md:pb-15">
       
       {/* TOP CONTENT */}
-      <div className="container mx-auto px-4 sm:px-6 text-center slider-container">
+    <div className="container mx-auto px-4 sm:px-6 text-center slider-container" style={{ backgroundImage: `url(${SliderBg})`,}}>
 
         {/* Heading */}
         <AnimatedHeading />

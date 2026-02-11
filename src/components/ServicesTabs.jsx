@@ -5,6 +5,7 @@ import { Navigation} from "swiper/modules";
 import "swiper/css"
 import "swiper/css/navigation";
 import { icon1, icon2, icon3, icon4 } from '../components/svgs/tab1.jsx'
+import FamilyTree from "../components/FamilyTree.jsx"
 import eclipse from "/src/assets/images/steps-ellipse.png";
 import step1 from "/src/assets/images/steps1-img.png";
 import step2 from "/src/assets/images/steps2-img.png";
@@ -160,6 +161,9 @@ export default function ServicesTabs() {
         <h2 className="2xl:text-7xl xl:text-6xl lg:text-5xl text-4xl font-bold text-primary capitalize  leading-[1.4em] text-center">
           Creating A Family Legacy<br />Every family carries
         </h2>
+
+        {/* Family tree */}
+        <FamilyTree />
 
         {/* Tabs */}
         <div className="mt-12 flex justify-center gap-0 sm:gap-3 flex-wrap lg:px-6 px-3 mb-4">

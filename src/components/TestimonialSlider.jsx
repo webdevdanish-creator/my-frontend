@@ -32,6 +32,10 @@ export default function TestimonialSlider() {
   return (
     <section id="testimonial" className="lg:py-32 sm:py-20 py-10 relative">
       <div className="container mx-auto px-6">
+        
+        <h2 className="2xl:text-7xl xl:text-6xl lg:text-5xl text-4xl text-center font-bold text-primary mb-4">
+            What Our Storytellers Say
+          </h2>
 
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -54,9 +58,7 @@ export default function TestimonialSlider() {
                 {/* LEFT CONTENT */}
                 <div>
                   <img src="src/assets/images/quote1.png" alt="" />
-
                   <h3 className="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl text-lg font-regular text-primary capitalize leading-[1.2em]">
-                    <span className="font-black text-primary">What Our Storytellers Say</span> <br />
                     <span>{item.quote} <img src="src/assets/images/quote2.png" alt="" className="md:h-[24px]" /></span>
                   </h3>
 
