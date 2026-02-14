@@ -68,6 +68,14 @@ button:hover {
     mask-position: center;
     align-content: center;
 }
+.enterprise-cards .cards {
+    mask-image: url(src/assets/images/card-mask2.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    align-content: center;
+    aspect-ratio: 0.715 / 1;
+}
 
 section.family-tree {
     margin-top: 15px;
@@ -94,6 +102,17 @@ img.avatar {
     background-size: cover;
     background-position: center;
 }
+
+/* .enterprise-cards .card-inner {
+    background: white;
+    width: 100%;
+    mask-image: url(src/assets/images/card-mask2.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    height: 100%;
+    align-content: center;
+} */
 
 .hero-cards .cards .card-inner {
     background: white;
@@ -215,6 +234,20 @@ img.avatar {
     z-index: 2;
 }
 
+.test-slide {
+    padding: 0px 3vw;
+}.testimonial-prev {
+    left: 0;
+}
+.testimonial-next {
+    right: 0;
+}
+
+.enterprise h2 {
+    max-width: calc(calc(100vw) - calc(50%));
+    margin: auto;
+}
+
 
 
 .active:before {
@@ -328,7 +361,7 @@ span.center-text {
     line-height: 1.2em;
 }
 .serv-card {
-    height: 65%;
+    height: fit-content;
 }
 .serv-card button {
     font-size: 14px;
@@ -358,7 +391,7 @@ span.center-text {
     gap: 15px;
 }
 .testimonial-next, .testimonial-prev {
-    top: 50%;
+    top: 0%;
 }
 section#testimonial h3 {
     line-height: 1.4em;
@@ -433,7 +466,7 @@ section#testimonial h3 {
     gap: 20px;
 }
 .testimonial-prev, .testimonial-next {
-    top: 50%;
+    top: 5%;
 }
 section#testimonial h3 {
     line-height: 1.5em;
@@ -542,6 +575,12 @@ button.testimonial-prev {
     height: 25px;
     font-size: 20px;
 }
+.testimonial-prev {
+    left: 0;
+}
+.testimonial-next {
+    right: 0;
+}
 .family-tree img {
     border-radius: 50px !important;
 }
@@ -562,6 +601,12 @@ button.testimonial-prev {
 #testimonial button {
     width: 35px;
     height: 35px;
+}
+.testimonial-prev {
+    left: 0;
+}
+.testimonial-next {
+    right: 0;
 }
 .family-tree img {
     border-radius: 70px !important;
@@ -584,6 +629,15 @@ button.testimonial-prev {
 }
 section#testimonial .swiper-wrapper {
     gap: 1px;
+}
+.test-slide {
+    padding: 0px 3.9vw;
+}
+.testimonial-prev {
+    left: 0;
+}
+.testimonial-next {
+    right: 0;
 }
 }
 

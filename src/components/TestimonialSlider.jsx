@@ -36,7 +36,7 @@ export default function TestimonialSlider() {
         <h2 className="2xl:text-7xl xl:text-6xl lg:text-5xl text-4xl text-center font-bold text-primary mb-4">
             What Our Storytellers Say
           </h2>
-
+<div className="relative">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation={{
@@ -83,6 +83,7 @@ export default function TestimonialSlider() {
             </SwiperSlide>
           ))}
         </Swiper>
+        
 
         {/* CUSTOM NAVIGATION */}
         <button className="testimonial-prev text-primary absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-black transition">
@@ -92,7 +93,7 @@ export default function TestimonialSlider() {
         <button className="testimonial-next text-primary absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-black transition">
           ›
         </button>
-
+</div>
       </div>
     </section>
   );
